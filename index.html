@@ -1,0 +1,2065 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zoomit</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+
+</head>
+<body>
+
+    <header class="header">
+        <section class="hotMenu">
+            <section class="container">
+                <section class="hot-request">
+                    <i class="fa-brands fa-hotjar"></i>
+                    <span>موضوعات داغ</span>
+                </section>
+                <ul class="navbar-header-1">
+                    <li><a href="#">قیمت گوشی</a></li>
+                    <li><a href="#">ساخت اپل آیدی</a></li>
+                    <li><a href="#">قیمت گوشی سامسونگ</a></li>
+                    <li><a href="#">بهترین گوشی های شیائومی</a></li>
+                    <li><a href="#">بهترین گوشی آیفون</a></li>
+                    <li><a href="#">دارک وب چیست</a></li>
+                    <li><a href="#">درباره زومیت</a></li>
+                    <li><a href="#">تبلیغات</a></li>
+                </ul>
+                <!-- <section class="clear-fix"></section> -->
+            </section>
+        </section>
+
+        <section class="navbar-header-2">
+            <section class="container-2">
+                <section class="header-logo">
+                    <button type="button" class="navbar-menu-btn" onclick="showNavbar(), changeBtn()">
+                        <i class="fas fa-bars" id="btn1"></i>
+                    </button>
+                    <a href="#" class="zoomit-logo">
+                        <img src="https://www.zoomit.ir/Themes/Zoomit.ir/UI/src/mediaFiles/img/zoomit_logo_h.svg" alt="زومیت">
+                    </a>
+                    <a href="#" class="navbar-menu-search" onclick="showSearch()">
+                        <i class="fa-solid fa-magnifying-glass" id="search1"></i>
+                    </a>
+                    <section class="clear-fix"></section>
+                </section>
+                <section class="navbar-header-2-lists" id="navbar" onsc>
+                    <section class="navbar-header-2-items">
+                        <ul>
+                            <li>
+                                <a href="#" class="product color1">
+                                    <span>محصولات</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" onclick="showMenu1()" id="color-btn1" class="color1">
+                                    <span class="color1" id="color-txt1">زومیت</span>
+                                    <i class="fa-solid Zoom" id="color-i1"></i>
+                                </a>
+                                <div class="zommitMenu" id="zommitMenu">
+                                    <ul>
+                                        <li><a href="#">تبلیغات</a></li>
+                                        <li><a href="#">درباره ما</a></li>
+                                        <li><a href="#">تماس با ما</a></li>
+                                        <li><a href="#">استخدام</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#" onclick="showMenu2()" id="color-btn2" class="color1">
+                                    <span class="color1" id="color-txt2">فناوری</span>
+                                    <i class="fa-solid Zoom" id="color-i1"></i>
+                                </a>
+                                <div class="technology" id="technology">
+                                    <ul class="technology-list">
+                                        <li class="technology-group p-10x special-color">
+                                            <ul>
+                                                <li><a href="#">موبایل</a></li>
+                                                <li><a href="#">تبلت</a></li>
+                                                <li><a href="#">لپ تاپ</a></li>
+                                                <li><a href="#">گجت</a></li>
+                                                <li><a href="#">پوشیدنی ها</a></li>
+                                                <li><a href="#">دوربین</a></li>
+                                                <li><a href="#">سیستم عامل</a></li>
+                                                <li><a href="#">اینترنت و شبکه</a></li>
+                                                <li><a href="#">اخبار فناوری ایران</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="technology-group">
+                                            <ul>
+                                                <li><a href="#"><h3 class="technology-title">سخت افزار<i class="fa-solid Zoom technology-title-i"></i> </h3></a></li>
+                                                <li><a href="#">کامپیوتر رومیزی</a></li>
+                                                <li><a href="#">پردازنده</a></li>
+                                                <li><a href="#">مادربرد</a></li>
+                                                <li><a href="#">حافظه</a></li>
+                                                <li><a href="#">پردازنده گرافیکی</a></li>
+                                                <li><a href="#">حافظه ذخیره‌سازی</a></li>
+                                                <li><a href="#">مانیتور</a></li>
+                                                <li><a href="#">چاپگر، اسکنر</a></li>
+                                                <li><a href="#">لوازم جانبی</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="technology-group">
+                                            <ul>
+                                                <li><a href="#"><h3 class="technology-title">صوتی تصویری <i class="fa-solid Zoom technology-title-i"></i></h3></a></li>
+                                                <li><a href="#">تلویزیون</a></li>
+                                                <li><a href="#">سیستم‌های صوتی</a></li>
+                                                <li><a href="#">ویدیو پروژکتور</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="technology-group">
+                                            <ul>
+                                                <li><a href="#"><h3 class="technology-title">آموزش <i class="fa-solid Zoom technology-title-i"></i></h3></a></li>
+                                                <li><a href="#">تلفن هوشمند / تبلت</a></li>
+                                                <li><a href="#">آموزش کامپیوتر</a></li>
+                                                <li><a href="#">صوتی و تصویری</a></li>
+                                                <li><a href="#">آموزش عکاسی</a></li>
+                                                <li><a href="#">بازاریابی اینترنتی</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="technology-group">
+                                            <ul>
+                                                <li><a href="#">لوازم خانگی</a></li>
+                                                <li><a href="#">هدفون </a></li>
+                                                <li><a href="#">امنیت</a></li>
+                                                <li><a href="#">معرفی وب سایت</a></li>
+                                                <li><a href="#">گزارش مالی</a></li>
+                                                <li><a href="#">رپورتاژ آگهی</a></li>
+                                                <li><a href="#">گزارش زومیت</a></li>
+                                                <li><a href="#">نرم‌افزار و اپلیکیشن</a></li>
+                                            </ul>
+                                        </li>
+                                        <section class="clear-fix"></section>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span> ایران 🔥 </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" onclick="showMenu3()" id="color-btn3" class="color1">
+                                    <span class="color1" id="color-txt3">بررسی</span>
+                                    <i class="fa-solid Zoom" id="color-i3"></i>
+                                </a>
+                                <div class="check" id="check">
+                                    <ul>
+                                        <li><a href="#">بررسی موبایل</a></li>
+                                        <li><a href="#">بررسی لپ تاپ</a></li>
+                                        <li><a href="#">بررسی پوشیدنی ها</a></li>
+                                        <li><a href="#">بررسی تبلت</a></li>
+                                        <li><a href="#">بررسی تلویزیون</a></li>
+                                        <li><a href="#">بررسی اسپیکر</a></li>
+                                        <li><a href="#">بررسی ویدیویی</a></li>
+                                        <li><a href="#">همه‌ی بررسی‌ها</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#" onclick="showMenu4()" id="color-btn4" class="color1">
+                                    <span class="color1" id="color-txt4">ویدیو</span>
+                                    <i class="fa-solid Zoom" id="color-i4"></i>
+                                </a>
+                                <div class="video" id="video">
+                                    <ul>
+                                        <li><a href="#">بررسی ویدیویی</a></li>
+                                        <li><a href="#">نگاه نزدیک</a></li>
+                                        <li><a href="#">زوم‌کست</a></li>
+                                        <li><a href="#">ویدیو خودرو</a></li>
+                                        <li><a href="#">جعبه‌گشایی</a></li>
+                                        <li><a href="#">گزارش ویدیویی</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>راهنمای خرید</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" onclick="showMenu5()" id="color-btn5" class="color1">
+                                    <span class="color1" id="color-txt5">علمی</span>
+                                    <i class="fa-solid Zoom" id="color-i5"></i>
+                                </a>
+                                <div class="scientific" id="scientific">
+                                    <ul>
+                                        <li><a href="#">نجوم</a></li>
+                                        <li><a href="#">پزشکی و سلامت</a></li>
+                                        <li><a href="#">علوم پایه و مهندسی</a></li>
+                                        <li><a href="#">انرژی و محیط زیست</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#" onclick="showMenu6()" id="color-btn6" class="color1">
+                                    <span class="color1" id="color-txt6">زوم پلاس</span>
+                                    <i class="fa-solid Zoom" id="color-i6"></i>
+                                </a>
+                                <div class="zoomPlus" id="zoomPlus">
+                                    <ul>
+                                        <li><a href="#">شاتر</a></li>
+                                        <li><a href="#">پازل</a></li>
+                                        <li><a href="#">معماری</a></li>
+                                        <li><a href="#">گوناگون</a></li>
+                                        <li><a href="#">بازی</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="s-sh-a">
+                        <a href="#" class="account">
+                            <i class="fa-solid fa-user-large"></i>
+                            <span class="account-title">ورود | عضویت</span>
+                        </a>
+                        <a href="#">
+                            <i class="fa-solid fa-share-nodes"></i>
+                        </a>
+                        <div class="social-network">
+                            <a href="#" title="Telegram">
+                                <i class="fa-brands fa-telegram"></i>
+                            </a>
+                            <a href="#" title="Instagram">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="#" title="Twitter">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                            <a href="#" title="Feed">
+                                <i class="fa-solid fa-rss"></i>
+                            </a>
+                            <a href="#" title="Youtube">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                            <section class="clear-fix"></section>
+                        </div>
+                        <a href="#" onclick="showSearch()">
+                            <i class="fa-solid fa-magnifying-glass" id="search"></i>
+                        </a>
+                    </section>
+                    <section class="clear-fix"></section>
+                </section>
+                <div class="search-detail-h" id="box">
+                    <input type="text" placeholder="عبارت مورد نظر خود را وارد کنید" class="search-detail-box">
+                    <div class="search-detail-line"></div>
+                </div>
+                <section class="clear-fix"></section>
+            </section>
+        </section>
+    </header>
+
+
+
+    <main class="main" onclick="offMenu()" onmousewheel="showBtnUp()">
+        <section class="banner-adver">
+            <div>
+                <a href="#">
+                    <img src="https://cdn01.zoomit.ir/2022/7/banner-neo-qled-8k-970x250.gif" alt="">
+                </a>
+            </div>
+            
+        </section>
+        <section class="adver-news">
+            <section class="adver-news-content">
+                <section class="col-1">
+                    <section class="col-1-1">
+                        <a href="#" class="col-1-1-ban1">
+                            <div class="ban-title">
+                                <h2>بررسی گلکسی بادز ۲ پرو سامسونگ</h2>
+                            </div>
+                        </a>
+                        <section class="col-1-1-ban2">
+                            <a href="#">
+                                <div class="ban-title">
+                                    <h2>فیبر نوری؛ وعده تزئینی وزیر ارتباطات</h2>
+                                </div>
+                            </a>
+                        </section>
+                        <section class="col-1-1-ban3">
+                            <a href="#">
+                                <div class="ban-title">
+                                    <h2>فناوری لازم برای صحبت‌کردن با مردگان از راه رسیده است؛ آیا آماده هستیم؟</h2>
+                                </div>
+                            </a>
+                        </section>
+                    </section>
+                    <section class="col-1-2">
+                        <a href="#" class="col-1-2-ban1">
+                            <div class="ban-title">
+                                <h2>حافظه رم چیست و به چه مقدار از آن در گوشی نیاز داریم؟</h2>
+                            </div>
+                        </a>
+                        <a href="#" class="col-1-2-ban2">
+                            <div class="ban-title">
+                                <h2>جام جهانی ۲۰۲۲؛ رویدادی جذاب برای علاقه‌مندان به دنیای فناوری</h2>
+                            </div>
+                        </a>
+                    </section>
+                    <section class="clear-fix"></section>
+                </section>
+                <section class="col-2">
+                    <section class="col-2-content">
+                        <section class="col-2-ban1">
+                            <a href="#">
+                                <img src="https://cdn01.zoomit.ir/2022/10/msi-monitor-banner-300-1.gif" alt="ماینتوری ماتریس MSI">
+                            </a>
+                        </section>
+                        <section class="col-2-ban2">
+                            <a href="#">
+                                <img src="https://cdn01.zoomit.ir/2022/10/modirankhodro-qatar2022-300x250.gif" alt="مدیران خودرو فونیکس">
+                            </a>
+                        </section>
+                    </section>
+                </section>
+                <section class="clear-fix"></section>
+            </section>
+        </section>
+        <section class="banner-adver-2">
+            <div class="banner-adver-2-content">
+                <a href="#">
+                    <img src="https://cdn01.zoomit.ir/2022/10/banner-onnx-1300x100.gif" alt="B7-ONYX">
+                </a>
+            </div>
+        </section>
+        <section class="offer">
+            <h3 class="title-h3">پیشنهاد سردبیر</h3>
+            <section class="offer-content">
+                <ul>
+                    <li class="offer-item">
+                        <section class="offer-item-img">
+                            <a href="#">
+                                <img src="Images/offer1.jpg" alt="جهان درصورت بقای نئاندرتال‌ها به جای انسان مدرن چه تفاوتی با امروز پیدا می‌کرد؟">
+                            </a>
+                        </section>
+                        <section class="offer-item-title">
+                            <a href="#">
+                                جهان درصورت بقای نئاندرتال‌ها به جای انسان مدرن چه تفاوتی با امروز پیدا می‌کرد؟ 
+                            </a>
+                        </section>
+                    </li>
+                    <li class="offer-item">
+                        <section class="offer-item-img">
+                            <a href="#">
+                                <img src="Images/offer2.jpg" alt="شاید روشنایی نمایشگر گلکسی S23 اولترا به ۲۲۰۰ نیت برسد">
+                            </a>
+                        </section>
+                        <section class="offer-item-title">
+                            <a href="#">
+                                شاید روشنایی نمایشگر گلکسی S23 اولترا به ۲۲۰۰ نیت برسد 
+                            </a>
+                        </section>
+                    </li>
+                    <li class="offer-item">
+                        <section class="offer-item-img">
+                            <a href="#">
+                                <img src="Images/offer3.jpg" alt="ظاهراً اپل به خرید تیم فوتبال منچستر یونایتد علاقمند است">
+                            </a>
+                        </section>
+                        <section class="offer-item-title">
+                            <a href="#">
+                                ظاهراً اپل به خرید تیم فوتبال منچستر یونایتد علاقمند است 
+                            </a>
+                        </section>
+                    </li>
+                    <li class="offer-item">
+                        <section class="offer-item-img">
+                            <a href="#">
+                                <img src="Images/offer4.jpg" alt="رندرهای گلکسی A34 مشخصات ظاهری این گوشی را نشان می‌دهند">
+                            </a>
+                        </section>
+                        <section class="offer-item-title">
+                            <a href="#">
+                                رندرهای گلکسی A34 مشخصات ظاهری این گوشی را نشان می‌دهند 
+                            </a>
+                        </section>
+                    </li>
+                    <li class="offer-item">
+                        <section class="offer-item-img">
+                            <a href="#">
+                                <img src="Images/offer5.jpg" alt="مدیرعامل آپارات خطاب به رئیس صدا و سیما: فضای مجازی را بگذارید برای مردم بماند">
+                            </a>
+                        </section>
+                        <section class="offer-item-title">
+                            <a href="#">
+                                مدیرعامل آپارات خطاب به رئیس صدا و سیما: فضای مجازی را بگذارید برای مردم بماند 
+                            </a>
+                        </section>
+                    </li>
+                    <section class="clear-fix"></section>
+                </ul>
+            </section>
+            <section class="offer-content-s">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <section class="offer-item">
+                                <section class="offer-item-img">
+                                    <a href="#">
+                                        <img src="Images/offer1.jpg" alt="جهان درصورت بقای نئاندرتال‌ها به جای انسان مدرن چه تفاوتی با امروز پیدا می‌کرد؟">
+                                    </a>
+                                </section>
+                                <section class="offer-item-title">
+                                    <a href="#">
+                                        جهان درصورت بقای نئاندرتال‌ها به جای انسان مدرن چه تفاوتی با امروز پیدا می‌کرد؟ 
+                                    </a>
+                                </section>
+                            </section>
+                        </div>
+                        <div class="swiper-slide">
+                            <section class="offer-item">
+                                <section class="offer-item-img">
+                                    <a href="#">
+                                        <img src="Images/offer2.jpg" alt="شاید روشنایی نمایشگر گلکسی S23 اولترا به ۲۲۰۰ نیت برسد">
+                                    </a>
+                                </section>
+                                <section class="offer-item-title">
+                                    <a href="#">
+                                        شاید روشنایی نمایشگر گلکسی S23 اولترا به ۲۲۰۰ نیت برسد 
+                                    </a>
+                                </section>
+                            </section>
+                        </div>
+                        <div class="swiper-slide">
+                            <section class="offer-item">
+                                <section class="offer-item-img">
+                                    <a href="#">
+                                        <img src="Images/offer3.jpg" alt="ظاهراً اپل به خرید تیم فوتبال منچستر یونایتد علاقمند است">
+                                    </a>
+                                </section>
+                                <section class="offer-item-title">
+                                    <a href="#">
+                                        ظاهراً اپل به خرید تیم فوتبال منچستر یونایتد علاقمند است 
+                                    </a>
+                                </section>
+                            </section>
+                        </div>
+                        <div class="swiper-slide">
+                            <section class="offer-item">
+                                <section class="offer-item-img">
+                                    <a href="#">
+                                        <img src="Images/offer4.jpg" alt="رندرهای گلکسی A34 مشخصات ظاهری این گوشی را نشان می‌دهند">
+                                    </a>
+                                </section>
+                                <section class="offer-item-title">
+                                    <a href="#">
+                                        رندرهای گلکسی A34 مشخصات ظاهری این گوشی را نشان می‌دهند 
+                                    </a>
+                                </section>
+                            </section>
+                        </div>
+                        <div class="swiper-slide">
+                            <section class="offer-item">
+                                <section class="offer-item-img">
+                                    <a href="#">
+                                        <img src="Images/offer5.jpg" alt="مدیرعامل آپارات خطاب به رئیس صدا و سیما: فضای مجازی را بگذارید برای مردم بماند">
+                                    </a>
+                                </section>
+                                <section class="offer-item-title">
+                                    <a href="#">
+                                        مدیرعامل آپارات خطاب به رئیس صدا و سیما: فضای مجازی را بگذارید برای مردم بماند 
+                                    </a>
+                                </section
+                            </section>>
+                        </div>
+                    </div>
+                    <!-- <div class="swiper-pagination"></div> -->
+                </div>
+            </section>
+        </section>
+
+        <section class="new-info">
+            <div class="new-info-container">
+                <section class="sideBarRight">
+                    <div class="sideBarRight-container">
+                        <section class="sideBarRight-adver-top">
+                            <div>
+                                <a href="#" class="sideBarRight-adver-img">
+                                    <img src="https://cdn01.zoomit.ir/2022/8/mobogift-250-250.gif" alt="گیفت کارت">
+                                </a>
+                            </div>
+                        </section>
+                        <section class="popular-content">
+                            <h3 class="title-h3">پربازدیدترین مطالب</h3>
+                            <ul>
+                                <li class="popular-items">
+                                    <section class="popular-items-img">
+                                        <a href="#">
+                                            <img src="Images/popular1.jpg" alt="alt="آموزش اینستاگرام؛ صفر تا صد به زبان ساده"">
+                                        </a>
+                                    </section>
+                                    <section class="popular-items-title">
+                                        <a href="#">
+                                            آموزش اینستاگرام؛ صفر تا صد به زبان ساده 
+                                        </a>
+                                    </section>
+                                </li>
+                                <li class="popular-items">
+                                    <section class="popular-items-img">
+                                        <a href="#">
+                                            <img src="Images/popular2.jpg" alt="بهترین گوشی های گیمینگ و مخصوص بازی [آذر ۱۴۰۱]">
+                                        </a>
+                                    </section>
+                                    <section class="popular-items-title">
+                                        <a href="#">
+                                            بهترین گوشی های گیمینگ و مخصوص بازی [آذر ۱۴۰۱] 
+                                        </a>
+                                    </section>
+                                </li>
+                                <li class="popular-items">
+                                    <section class="popular-items-img">
+                                        <a href="#">
+                                            <img src="Images/popular3.jpg" alt="متاورس چیست و کی قرار است در آن زندگی کنیم؟ + ویدئو">
+                                        </a>
+                                    </section>
+                                    <section class="popular-items-title">
+                                        <a href="#">
+                                            متاورس چیست و کی قرار است در آن زندگی کنیم؟ + ویدئو 
+                                        </a>
+                                    </section>
+                                </li>
+                                <li class="popular-items">
+                                    <section class="popular-items-img">
+                                        <a href="#">
+                                            <img src="Images/popular4.jpg" alt="آموزش گام‌به‌گام بازیابی رمز جیمیل فراموش شده + تصویر">
+                                        </a>
+                                    </section>
+                                    <section class="popular-items-title">
+                                        <a href="#">
+                                            آموزش گام‌به‌گام بازیابی رمز جیمیل فراموش شده + تصویر 
+                                        </a>
+                                    </section>
+                                </li>
+                                <li class="popular-items">
+                                    <section class="popular-items-img">
+                                        <a href="#">
+                                            <img src="Images/popular5.jpg" alt="۱۰ گوشی هوشمند برتر بازار از نظر سرعت شارژ">
+                                        </a>
+                                    </section>
+                                    <section class="popular-items-title">
+                                        <a href="#">
+                                            ۱۰ گوشی هوشمند برتر بازار از نظر سرعت شارژ 
+                                        </a>
+                                    </section>
+                                </li>
+                                <li class="popular-items">
+                                    <section class="popular-items-img">
+                                        <a href="#">
+                                            <img src="Images/popular6.jpg" alt="بهترین نرم‌ افزارهای ویرایش صدا">
+                                        </a>
+                                    </section>
+                                    <section class="popular-items-title">
+                                        <a href="#">
+                                            بهترین نرم‌ افزارهای ویرایش صدا 
+                                        </a>
+                                    </section>
+                                </li>
+                                <li class="popular-items">
+                                    <section class="popular-items-img">
+                                        <a href="#">
+                                            <img src="Images/popular7.jpg" alt="تصویر شکارشده از پرنده‌ای که بچه تمساح را از مادرش می‌دزدد">
+                                        </a>
+                                    </section>
+                                    <section class="popular-items-title">
+                                        <a href="#">
+                                            تصویر شکارشده از پرنده‌ای که بچه تمساح را از مادرش می‌دزدد 
+                                        </a>
+                                    </section>
+                                </li>
+                                <li class="popular-items">
+                                    <section class="popular-items-img">
+                                        <a href="#">
+                                            <img src="Images/popular8.jpg" alt="تصورات مردم ۱۰۰ سال قبل از آینده چه بود؟">
+                                        </a>
+                                    </section>
+                                    <section class="popular-items-title">
+                                        <a href="#">
+                                            تصورات مردم ۱۰۰ سال قبل از آینده چه بود؟ 
+                                        </a>
+                                    </section>
+                                </li>
+                                <li class="popular-items">
+                                    <section class="popular-items-img">
+                                        <a href="#">
+                                            <img src="Images/popular9.jpg" alt="دراپ باکس چیست و چه کاربردی دارد؟">
+                                        </a>
+                                    </section>
+                                    <section class="popular-items-title">
+                                        <a href="#">
+                                            دراپ باکس چیست و چه کاربردی دارد؟ 
+                                        </a>
+                                    </section>
+                                </li>
+                                <li class="popular-items">
+                                    <section class="popular-items-img">
+                                        <a href="#">
+                                            <img src="Images/popular10.jpg" alt="شاید MIUI 14 شیائومی بهینه‌ترین رابط کاربری اندروید باشد">
+                                        </a>
+                                    </section>
+                                    <section class="popular-items-title">
+                                        <a href="#">
+                                            شاید MIUI 14 شیائومی بهینه‌ترین رابط کاربری اندروید باشد 
+                                        </a>
+                                    </section>
+                                </li>
+                            </ul>
+                        </section>
+                        <section class="sideBarRight-adver-bottom">
+                            <section>
+                                <a href="#">
+                                    <img src="https://cdn01.zoomit.ir/2022/10/parspack-banner-300x250-zoomit.gif" alt="پارس پک">
+                                </a>
+                            </section>
+                        </section>
+                    </div>
+                </section>
+
+                <section class="main-content">
+                    <div>
+                        <h3 class="title-h3">مطالب جدید</h3>
+                        <section class="main-content-detail">
+                            <section class="news">
+                                <div class="news-container">
+                                    <section class="news-img">
+                                        <a href="#">
+                                            <img src="Images/news1.jpg" alt="منابع آگاه از دسترسی «چندین هکر» به داده‌های شخصی کاربران توییتر می‌گویند">
+                                        </a>
+                                    </section>
+                                    <section class="news-content">
+                                        <div class="news-group">
+                                            <ul>
+                                                <li>
+                                                    <a href="#">امنیت</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <h3 class="news-title">
+                                            <a href="#">
+                                                منابع آگاه از دسترسی «چندین هکر» به داده‌های شخصی کاربران توییتر می‌گویند 
+                                            </a>
+                                        </h3>
+                                        <div class="pointOfView">
+                                            <span>
+                                                <a href="#">
+                                                    مبین احمدی
+                                                </a>
+                                            </span>
+                                            | 
+                                            <span>۱۵:۴۰ ۱۴۰۱/۰۹/۰۶</span>
+                                            | 
+                                            <a href="#">
+                                                <span>+ دیدگاه</span>
+                                            </a>
+                                        </div>
+                                        <p class="news-ditail">
+                                            ظاهراً برخلاف آنچه توییتر در اوایل ۲۰۲۲ اعلام کرد، چندین هکر با استفاده از آسیب‌پذیری این شبکه‌ی اجتماعی به شماره‌موبایل و آدرس ایمیل ۵٫۴ میلیون از کاربران دسترسی پیدا کرده‌اند.
+                                        </p>
+                                    </section>
+                                    <section class="clear-fix"></section>
+                                </div>
+                            </section>
+
+                            <section class="news">
+                                <div class="news-container">
+                                    <section class="news-img">
+                                        <a href="#">
+                                            <img src="Images/news2.jpg" alt="دوربین پریسکوپی اوپو Find X6 Pro احتمالاً دوربین زوم شیائومی ۱۳ پرو را شکست خواهد داد">
+                                        </a>
+                                    </section>
+                                    <section class="news-content">
+                                        <div class="news-group">
+                                            <ul>
+                                                <li>
+                                                    <a href="#">موبایل</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <h3 class="news-title">
+                                            <a href="#">
+                                                دوربین پریسکوپی اوپو Find X6 Pro احتمالاً دوربین زوم شیائومی ۱۳ پرو را شکست خواهد داد 
+                                            </a>
+                                        </h3>
+                                        <div class="pointOfView">
+                                            <span>
+                                                <a href="#">
+                                                    مجتبی بوالحسنی
+                                                </a>
+                                            </span>
+                                            | 
+                                            <span>۱۶:۲۰ ۱۴۰۱/۰۹/۰۶</span>
+                                            | 
+                                            <a href="#">
+                                                <span>1 دیدگاه</span>
+                                            </a>
+                                        </div>
+                                        <p class="news-ditail">
+                                            شاید قدرت تصویربرداری دوربین پریسکوپی اوپو Find 6 Pro نسبت به دوربین بزرگ‌نمایی شیائومی ۱۳ پرو، بهتر باشد.
+                                        </p>
+                                    </section>
+                                    <section class="clear-fix"></section>
+                                </div>
+                            </section>
+
+                            <section class="news">
+                                <div class="news-container">
+                                    <section class="news-img">
+                                        <a href="#">
+                                            <img src="Images/news3.jpg" alt="کاهش ۹۳۶میلیارد تومانی درآمد همراه اول در دو ماه">
+                                        </a>
+                                    </section>
+                                    <section class="news-content">
+                                        <div class="news-group">
+                                            <ul>
+                                                <li>
+                                                    <a href="#">فناوری ایران</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <h3 class="news-title">
+                                            <a href="#">
+                                                کاهش ۹۳۶میلیارد تومانی درآمد همراه اول در دو ماه 
+                                            </a>
+                                        </h3>
+                                        <div class="pointOfView">
+                                            <span>
+                                                <a href="#">
+                                                    فاطمه محمدی
+                                                </a>
+                                            </span>
+                                            | 
+                                            <span>۱۶:۱۹ ۱۴۰۱/۰۹/۰۶</span>
+                                            | 
+                                            <a href="#">
+                                                <span>2 دیدگاه</span>
+                                            </a>
+                                        </div>
+                                        <p class="news-ditail">
+                                            درآمد همراه اول در آبان‌ماه بیش از ۱۹۲ میلیارد تومان کاهش داشت تا این اپراتور برای دومین ماه متوالی افت درآمد را تجربه کند.
+                                        </p>
+                                    </section>
+                                    <section class="clear-fix"></section>
+                                </div>
+                            </section>
+
+                            <section class="news">
+                                <div class="news-container">
+                                    <section class="news-img">
+                                        <a href="#">
+                                            <img src="Images/news4.jpg" alt="میت ایکس 3 به زودی به عنوان جدیدترین پرچم‌دار تاشو هواوی معرفی می شود">
+                                        </a>
+                                    </section>
+                                    <section class="news-content">
+                                        <div class="news-group">
+                                            <ul>
+                                                <li>
+                                                    <a href="#">موبایل</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <h3 class="news-title">
+                                            <a href="#">
+                                                میت ایکس 3 به زودی به عنوان جدیدترین پرچم‌دار تاشو هواوی معرفی می شود 
+                                            </a>
+                                        </h3>
+                                        <div class="pointOfView">
+                                            <span>
+                                                <a href="#">
+                                                    شبنم توایی
+                                                </a>
+                                            </span>
+                                            | 
+                                            <span>۱۴:۳۰ ۱۴۰۱/۰۹/۰۶</span>
+                                            | 
+                                            <a href="#">
+                                                <span>3 دیدگاه</span>
+                                            </a>
+                                        </div>
+                                        <p class="news-ditail">
+                                            گزارش‌ها حاکی از آن است که نمونه‌ی اولیه‌ی گوشی تاشوی هواوی Mate X3 به مرحله‌ی تولید انبوه رسیده و به‌زودی شاهد عرضه‌ی این گوشی در بازار خواهیم بود.
+                                        </p>
+                                    </section>
+                                    <section class="clear-fix"></section>
+                                </div>
+                            </section>
+
+                            <section class="news-adver-banner">
+                                <div class="news-adver-container">
+                                    <section>
+                                        <a href="#">
+                                            <img src="https://cdn01.zoomit.ir/2022/11/newtesco-banner-1.gif" alt="">
+                                        </a>
+                                    </section>
+                                </div>
+                            </section>
+
+                            <section class="news">
+                                <div class="news-container">
+                                    <section class="news-img">
+                                        <a href="#">
+                                            <img src="Images/news5.jpg" alt="رندر وان پلاس ۱۱ تغییر قابل توجه پنل پشتی را به تصویر می‌کشد">
+                                        </a>
+                                    </section>
+                                    <section class="news-content">
+                                        <div class="news-group">
+                                            <ul>
+                                                <li>
+                                                    <a href="#">موبایل</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <h3 class="news-title">
+                                            <a href="#">
+                                                رندر وان پلاس ۱۱ تغییر قابل توجه پنل پشتی را به تصویر می‌کشد 
+                                            </a>
+                                        </h3>
+                                        <div class="pointOfView">
+                                            <span>
+                                                <a href="#">
+                                                    مبین احمدی
+                                                </a>
+                                            </span>
+                                            | 
+                                            <span>۱۶:۰۰ ۱۴۰۱/۰۹/۱۴</span>
+                                            | 
+                                            <a href="#">
+                                                <span>3 دیدگاه</span>
+                                            </a>
+                                        </div>
+                                        <p class="news-ditail">
+                                            افشاگران ادعا می‌کنند وان پلاس ۱۱ با تراشه‌ی Snapdragon 8 Gen 2 و نمایشگر ۶٫۷ اینچ تولید می‌شود. احتمالاً وان پلاس ۱۱ در دو رنگ عرضه خواهد شد.
+                                        </p>
+                                    </section>
+                                    <section class="clear-fix"></section>
+                                </div>
+                            </section>
+
+                            <section class="news">
+                                <div class="news-container">
+                                    <section class="news-img">
+                                        <a href="#">
+                                            <img src="Images/news6.jpg" alt="تعمیرگاه تخصصی خودروهای خارجی تهران/ایران اتو ریپیر">
+                                        </a>
+                                    </section>
+                                    <section class="news-content">
+                                        <div class="news-group">
+                                            <ul>
+                                                <li>
+                                                    <a href="#">رپورتاژ آگهی</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <h3 class="news-title">
+                                            <a href="#">
+                                                تعمیرگاه تخصصی خودروهای خارجی تهران/ایران اتو ریپیر 
+                                            </a>
+                                        </h3>
+                                        <div class="pointOfView">
+                                            <span>
+                                                <a href="#">
+                                                    بخش تبلیغات
+                                                </a>
+                                            </span>
+                                            | 
+                                            <span>۱۵:۳۰ ۱۴۰۱/۰۹/۱۴</span>
+                                            | 
+                                            <a href="#">
+                                                <span>+ دیدگاه</span>
+                                            </a>
+                                        </div>
+                                        <p class="news-ditail">
+                                            اکثر افرادی که خودروهای خارجی دارند، به دلیل وارداتی‌بودن آن‌ها و نبود نمایندگی‌های رسمی در ایران، معمولاً هنگام تعمیر دچار مشکل می‌شوند، بنابراین صاحبان خودروهای خارجی همواره به‌دنبال تعمیرگاه‌های تخصصی هستند.
+                                        </p>
+                                    </section>
+                                    <section class="clear-fix"></section>
+                                </div>
+                            </section>
+
+                            <section class="news">
+                                <div class="news-container">
+                                    <section class="news-img">
+                                        <a href="#">
+                                            <img src="Images/news7.jpg" alt="ناتینگ با ورود به بازار آمریکا به‌دنبال شاخ‌به‌شاخ‌شدن با اپل است">
+                                        </a>
+                                    </section>
+                                    <section class="news-content">
+                                        <div class="news-group">
+                                            <ul>
+                                                <li>
+                                                    <a href="#">موبایل</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <h3 class="news-title">
+                                            <a href="#">
+                                                ناتینگ با ورود به بازار آمریکا به‌دنبال شاخ‌به‌شاخ‌شدن با اپل است 
+                                            </a>
+                                        </h3>
+                                        <div class="pointOfView">
+                                            <span>
+                                                <a href="#">
+                                                    مبین احمدی
+                                                </a>
+                                            </span>
+                                            | 
+                                            <span>۱۵:۰۰ ۱۴۰۱/۰۹/۱۴</span>
+                                            | 
+                                            <a href="#">
+                                                <span>4 دیدگاه</span>
+                                            </a>
+                                        </div>
+                                        <p class="news-ditail">
+                                            کارل پی، بنیان‌گذار و مدیرعامل ناتینگ، از احتمال عرضه‌ی گوشی جدید این برند در بازار آمریکا برای رقابت با اپل خبر می‌دهد. این برند احتمالاً تا دو سال دیگر به سوددهی می‌رسد.
+                                        </p>
+                                    </section>
+                                    <section class="clear-fix"></section>
+                                </div>
+                            </section>
+
+                            <section class="news">
+                                <div class="news-container">
+                                    <section class="news-img">
+                                        <a href="#">
+                                            <img src="Images/news8.jpg" alt="سهم اپل از بازار جهانی هدفون‌های بی‌سیم TWS اکنون سه‌برابر سهم سامسونگ است">
+                                        </a>
+                                    </section>
+                                    <section class="news-content">
+                                        <div class="news-group">
+                                            <ul>
+                                                <li>
+                                                    <a href="#">هدست و هدفون</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <h3 class="news-title">
+                                            <a href="#">
+                                                سهم اپل از بازار جهانی هدفون‌های بی‌سیم TWS اکنون سه‌برابر سهم سامسونگ است 
+                                            </a>
+                                        </h3>
+                                        <div class="pointOfView">
+                                            <span>
+                                                <a href="#">
+                                                    مجتبی بوالحسنی
+                                                </a>
+                                            </span>
+                                            | 
+                                            <span>۱۰:۰۰ ۱۴۰۱/۰۹/۱۵</span>
+                                            | 
+                                            <a href="#">
+                                                <span>+ دیدگاه</span>
+                                            </a>
+                                        </div>
+                                        <p class="news-ditail">
+                                            سهم اپل در بازار جهانی هدفون‌های بی‌سیم TWS به‌لطف محبوبیت بالای ایرپاد پرو ۲ و فروش بالای این محصول در سه‌ماهه‌ی سوم ۲۰۲۲ به‌میزان درخورتوجهی افزایش یافت.
+                                        </p>
+                                    </section>
+                                    <section class="clear-fix"></section>
+                                </div>
+                            </section>
+
+                            <section class="news">
+                                <div class="news-container">
+                                    <section class="news-img">
+                                        <a href="#">
+                                            <img src="Images/news9.jpg" alt="فینالیست‌های برگزیده مردمی رقابت عکاس حیات وحش ۲۰۲۲">
+                                        </a>
+                                    </section>
+                                    <section class="news-content">
+                                        <div class="news-group">
+                                            <ul>
+                                                <li>
+                                                    <a href="#">شاتر</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <h3 class="news-title">
+                                            <a href="#">
+                                                فینالیست‌های برگزیده مردمی رقابت عکاس حیات وحش ۲۰۲۲ 
+                                            </a>
+                                        </h3>
+                                        <div class="pointOfView">
+                                            <span>
+                                                <a href="#">
+                                                    ملیکا طاهران‌پور
+                                                </a>
+                                            </span>
+                                            | 
+                                            <span>۰۹:۰۰ ۱۴۰۱/۰۹/۱۵</span>
+                                            | 
+                                            <a href="#">
+                                                <span>1 دیدگاه</span>
+                                            </a>
+                                        </div>
+                                        <p class="news-ditail">
+                                            موزه تاریخ طبیعی ۲۵ عکس برتر را که برای برنده شدن جایزه برگزیده مردمی بهترین عکاس حیات وحش سال ۲۰۲۲ به رای گذاشته خواهد شد، انتخاب کرده است.
+                                        </p>
+                                    </section>
+                                    <section class="clear-fix"></section>
+                                </div>
+                            </section>
+
+                            <section class="news-adver-banner">
+                                <div class="news-adver-container">
+                                    <section>
+                                        <a href="#">
+                                            <img src="https://cdn01.zoomit.ir/2022/10/modirankhodro-qatar2022-300x250.gif" alt="">
+                                        </a>
+                                    </section>
+                                </div>
+                            </section>
+
+                            <section class="news">
+                                <div class="news-container">
+                                    <section class="news-img">
+                                        <a href="#">
+                                            <img src="Images/news10.jpg" alt="مدیران ارشد اپل به‌طورجدی به مدوّرکردن لبه آیفون ۱۵ فکر می‌کنند">
+                                        </a>
+                                    </section>
+                                    <section class="news-content">
+                                        <div class="news-group">
+                                            <ul>
+                                                <li>
+                                                    <a href="#">موبایل</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <h3 class="news-title">
+                                            <a href="#">
+                                                مدیران ارشد اپل به‌طورجدی به مدوّرکردن لبه آیفون ۱۵ فکر می‌کنند 
+                                            </a>
+                                        </h3>
+                                        <div class="pointOfView">
+                                            <span>
+                                                <a href="#">
+                                                    مبین احمدی 
+                                                </a>
+                                            </span>
+                                            | 
+                                            <span>۲۳:۵۵ ۱۴۰۱/۰۹/۱۴</span>
+                                            | 
+                                            <a href="#">
+                                                <span>4 دیدگاه</span>
+                                            </a>
+                                        </div>
+                                        <p class="news-ditail">
+                                            درحالی‌که گفته می‌شود آیفون ۱۵ از طراحی مشابه آیفون 5c استفاده می‌کند، یکی از افشاگران می‌گوید هنوز تصمیم قطعی‌ای دراین‌باره گرفته نشده است.
+                                        </p>
+                                    </section>
+                                    <section class="clear-fix"></section>
+                                </div>
+                            </section>
+
+                            <section class="news">
+                                <div class="news-container">
+                                    <section class="news-img">
+                                        <a href="#">
+                                            <img src="Images/news11.jpg" alt="گوشی تاشو گوگل در بنچمارک گیک‌بنچ رؤیت شد">
+                                        </a>
+                                    </section>
+                                    <section class="news-content">
+                                        <div class="news-group">
+                                            <ul>
+                                                <li>
+                                                    <a href="#">موبایل</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <h3 class="news-title">
+                                            <a href="#">
+                                                گوشی تاشو گوگل در بنچمارک گیک‌بنچ رؤیت شد 
+                                            </a>
+                                        </h3>
+                                        <div class="pointOfView">
+                                            <span>
+                                                <a href="#">
+                                                    مجتبی بوالحسنی
+                                                </a>
+                                            </span>
+                                            | 
+                                            <span>۲۳:۰۰ ۱۴۰۱/۰۹/۱۴</span>
+                                            | 
+                                            <a href="#">
+                                                <span>4 دیدگاه</span>
+                                            </a>
+                                        </div>
+                                        <p class="news-ditail">
+                                            اطلاعات فاش‌شده از گوشی تاشو پیکسل گوگل در گیک‌بنچ نشان می‌دهد این محصول که با کد Felix شناخته می‌شود، از سیستم-روی-چیپ تنسور G2 و ۱۲ گیگابایت حافظه‌ی رم بهره خواهد برد.
+                                        </p>
+                                    </section>
+                                    <section class="clear-fix"></section>
+                                </div>
+                            </section>
+
+                            <section class="news">
+                                <div class="news-container">
+                                    <section class="news-img">
+                                        <a href="#">
+                                            <img src="Images/news12.jpg" alt="اندروید ۱۳ برای گوشی‌های گلکسی S20 FE 5G و A32 4G و A51 5G منتشر شد">
+                                        </a>
+                                    </section>
+                                    <section class="news-content">
+                                        <div class="news-group">
+                                            <ul>
+                                                <li>
+                                                    <a href="#">سیستم عامل</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <h3 class="news-title">
+                                            <a href="#">
+                                                اندروید ۱۳ برای گوشی‌های گلکسی S20 FE 5G و A32 4G و A51 5G منتشر شد 
+                                            </a>
+                                        </h3>
+                                        <div class="pointOfView">
+                                            <span>
+                                                <a href="#">
+                                                    مبین احمدی
+                                                </a>
+                                            </span>
+                                            | 
+                                            <span>۲۲:۰۰ ۱۴۰۱/۰۹/۱۴</span>
+                                            | 
+                                            <a href="#">
+                                                <span>19 دیدگاه</span>
+                                            </a>
+                                        </div>
+                                        <p class="news-ditail">
+                                            سامسونگ به‌روزرسانی One UI 5.0 برپایه‌ی اندروید ۱۳ را برای گوشی‌های Galaxy S20 FE 5G و Galaxy A32 4G و Galaxy A51 5G و چند دستگاه دیگر دردسترس قرار داد.
+                                        </p>
+                                    </section>
+                                    <section class="clear-fix"></section>
+                                </div>
+                            </section>
+
+                            <section class="news">
+                                <div class="news-container">
+                                    <section class="news-img">
+                                        <a href="#">
+                                            <img src="Images/news13.jpg" alt="جعبه گشایی استیم دک | اولین نگاه به پی سی گیمینگ همراه ولو">
+                                        </a>
+                                    </section>
+                                    <section class="news-content">
+                                        <div class="news-group">
+                                            <ul>
+                                                <li>
+                                                    <a href="#">زومجی</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <h3 class="news-title">
+                                            <a href="#">
+                                                جعبه گشایی استیم دک | اولین نگاه به پی سی گیمینگ همراه ولو 
+                                            </a>
+                                        </h3>
+                                        <div class="pointOfView">
+                                            <span>
+                                                <a href="#">
+                                                    تیم زومجی
+                                                </a>
+                                            </span>
+                                            | 
+                                            <span>۲۱:۰۰ ۱۴۰۱/۰۹/۱۴</span>
+                                            | 
+                                            <a href="#">
+                                                <span>+ دیدگاه</span>
+                                            </a>
+                                        </div>
+                                        <p class="news-ditail">
+                                            استیم دک، پی سی گیمینگ قابل حمل شرکت ولو بالاخره به‌ایران رسید. ما هم کلی بازی روی این دستگاه نصب کردیم تا اولین نگاه را درکنار جعبه گشایی از استیم دک در ایران داشته باشیم.
+                                        </p>
+                                    </section>
+                                    <section class="clear-fix"></section>
+                                </div>
+                            </section>
+
+                            <section class="news-adver-banner">
+                                <div class="news-adver-container">
+                                    <section>
+                                        <a href="#">
+                                            <img src="https://cdn01.zoomit.ir/2022/11/banner-foroshgostar-gif-300-250.gif" alt="">
+                                        </a>
+                                    </section>
+                                </div>
+                            </section>
+
+                            <section class="news">
+                                <div class="news-container">
+                                    <section class="news-img">
+                                        <a href="#">
+                                            <img src="Images/news14.jpg" alt="سازمان غذا و داروی ایالات متحده اولین درمان ساخته‌شده از مدفوع انسان را تأیید کرد">
+                                        </a>
+                                    </section>
+                                    <section class="news-content">
+                                        <div class="news-group">
+                                            <ul>
+                                                <li>
+                                                    <a href="#">پزشکی و سلامت</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <h3 class="news-title">
+                                            <a href="#">
+                                                سازمان غذا و داروی ایالات متحده اولین درمان ساخته‌شده از مدفوع انسان را تأیید کرد 
+                                            </a>
+                                        </h3>
+                                        <div class="pointOfView">
+                                            <span>
+                                                <a href="#">
+                                                    مریم صفدری
+                                                </a>
+                                            </span>
+                                            | 
+                                            <span>۲۰:۰۰ ۱۴۰۱/۰۹/۱۴</span>
+                                            | 
+                                            <a href="#">
+                                                <span>2 دیدگاه</span>
+                                            </a>
+                                        </div>
+                                        <p class="news-ditail">
+                                            اخیراً FDA درمان ربیوتا را که حاوی باکتری‌های روده است، برای پیشگیری از نوعی عفونت خطرناک باکتریایی تأیید کرده است.
+                                        </p>
+                                    </section>
+                                    <section class="clear-fix"></section>
+                                </div>
+                            </section>
+
+                            <section class="news">
+                                <div class="news-container">
+                                    <section class="news-img">
+                                        <a href="#">
+                                            <img src="Images/news15.jpg" alt="شاید رمزارز توییتر کوین به‌زودی معرفی شود؛ خداحافظی با دوج کوین و بیت کوین؟">
+                                        </a>
+                                    </section>
+                                    <section class="news-content">
+                                        <div class="news-group">
+                                            <ul>
+                                                <li>
+                                                    <a href="#">ارز دیجیتال</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <h3 class="news-title">
+                                            <a href="#">
+                                                شاید رمزارز توییتر کوین به‌زودی معرفی شود؛ خداحافظی با دوج کوین و بیت کوین؟ 
+                                            </a>
+                                        </h3>
+                                        <div class="pointOfView">
+                                            <span>
+                                                <a href="#">
+                                                    مجتبی بوالحسنی
+                                                </a>
+                                            </span>
+                                            | 
+                                            <span>۱۹:۰۰ ۱۴۰۱/۰۹/۱۴</span>
+                                            | 
+                                            <a href="#">
+                                                <span>6 دیدگاه</span>
+                                            </a>
+                                        </div>
+                                        <p class="news-ditail">
+                                            در ساعات گذشته، شایعاتی در توییتر دست‌به‌دست می‌شود مبنی‌بر اینکه ایلان ماسک تصمیم گرفته است به‌زودی رمزارز جدیدی به‌ نام توییتر کوین (Twitter Coin) را معرفی کند.
+                                        </p>
+                                    </section>
+                                    <section class="clear-fix"></section>
+                                </div>
+                            </section>
+
+                            <section class="news">
+                                <div class="news-container">
+                                    <section class="news-img">
+                                        <a href="#">
+                                            <img src="Images/news16.jpg" alt="مایکروسافت احتمالاً تاچ بار مک بوک را در سرفیس به‌تکامل می‌رساند">
+                                        </a>
+                                    </section>
+                                    <section class="news-content">
+                                        <div class="news-group">
+                                            <ul>
+                                                <li>
+                                                    <a href="#">لپ تاپ</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <h3 class="news-title">
+                                            <a href="#">
+                                                مایکروسافت احتمالاً تاچ بار مک بوک را در سرفیس به‌تکامل می‌رساند 
+                                            </a>
+                                        </h3>
+                                        <div class="pointOfView">
+                                            <span>
+                                                <a href="#">
+                                                    مبین احمدی
+                                                </a>
+                                            </span>
+                                            | 
+                                            <span>۱۸:۰۰ ۱۴۰۱/۰۹/۱۴</span>
+                                            | 
+                                            <a href="#">
+                                                <span>9 دیدگاه</span>
+                                            </a>
+                                        </div>
+                                        <p class="news-ditail">
+                                            پتنت جدید مایکروسافت لپ‌تاپی با نمایشگر ثانویه‌ی لمسی نشان می‌دهد. در نگاه اول، این نمایشگر ثانویه‌ی لمسی مثل نسخه‌ی تکامل‌یافته‌ی تاچ‌بار مک بوک است.
+                                        </p>
+                                    </section>
+                                    <section class="clear-fix"></section>
+                                </div>
+                            </section>
+
+                            <section class="news">
+                                <div class="news-container">
+                                    <section class="news-img">
+                                        <a href="#">
+                                            <img src="Images/news17.jpg" alt="مشخصات دوربین شیائومی ۱۳ اولترا فاش شد">
+                                        </a>
+                                    </section>
+                                    <section class="news-content">
+                                        <div class="news-group">
+                                            <ul>
+                                                <li>
+                                                    <a href="#">موبایل</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <h3 class="news-title">
+                                            <a href="#">
+                                                مشخصات دوربین شیائومی ۱۳ اولترا فاش شد 
+                                            </a>
+                                        </h3>
+                                        <div class="pointOfView">
+                                            <span>
+                                                <a href="#">
+                                                    مجتبی بوالحسنی
+                                                </a>
+                                            </span>
+                                            | 
+                                            <span>۱۷:۳۰ ۱۴۰۱/۰۹/۱۴</span>
+                                            | 
+                                            <a href="#">
+                                                <span>5 دیدگاه</span>
+                                            </a>
+                                        </div>
+                                        <p class="news-ditail">
+                                            براساس گزارشی جدید، شیائومی ۱۳ اولترا مثل نسل قبلی این گوشی هوشمند از دوربین اصلی با حسگر یک‌اینچی بهره خواهد برد.
+                                        </p>
+                                    </section>
+                                    <section class="clear-fix"></section>
+                                </div>
+                            </section>
+
+                            <section class="news-adver-banner">
+                                <div class="news-adver-container">
+                                    <section>
+                                        <a href="#">
+                                            <img src="https://cdn01.zoomit.ir/2022/8/bimeh-saman-banner-300x250.gif" alt="">
+                                        </a>
+                                    </section>
+                                </div>
+                            </section>
+                        </section>
+
+                        <section class="pages">
+                            <div class="pages-container">
+                                <section class="pages-title">صفحه ۱ از ۵۸۴۲</section>
+                                <section class="pages-number">
+                                    <ul class="pages-number-list">
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa-solid fa-chevron-right"></i>
+                                            </a>
+                                        </li>
+                                        <li class="active">
+                                            <a href="#">۱</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">۲</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">۳</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">۴</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">۵</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fa-solid fa-chevron-left"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </section>
+                                <section class="clear-fix"></section>
+                            </div>
+                        </section>
+                    </div>
+                </section>
+
+
+                <section class="sideBarLeft">
+                    <div class="sideBarLeft-container">
+                        <section class="sideBarLeft-adver1">
+                            <section class="banner">
+                                <div>
+                                    <a href="#">
+                                        <img src="https://cdn01.zoomit.ir/2022/5/banner-behinn-300x250.gif" alt="بهین تکنولوژی بنر">
+                                    </a>
+                                </div>
+                            </section>
+                            <section class="banner">
+                                <div>
+                                    <a href="#">
+                                        <img src="https://cdn01.zoomit.ir/2022/8/bimeh-saman-banner-300x250.gif" alt="بنر بیمه سامان">
+                                    </a>
+                                </div>
+                            </section>
+                            <section class="banner">
+                                <div>
+                                    <a href="#">
+                                        <img src="https://cdn01.zoomit.ir/2022/11/rightel-banner-300x250.gif" alt="رایتل">
+                                    </a>
+                                </div>
+                            </section>
+                            <section class="banner">
+                                <div>
+                                    <a href="#">
+                                        <img src="https://cdn01.zoomit.ir/2022/11/newtesco-banner-1.gif" alt="">
+                                    </a>
+                                </div>
+                            </section>
+                        </section>
+                        <section class="education">
+                            <h3 class="education-t">آموزش</h3>
+                            <div class="education-container">
+                                <section class="education-parts">
+                                    <section class="education-img">
+                                        <a href="#">
+                                            <img src="Images/edu1.jpg" alt="ساخت کاور برای کانال یوتیوب">
+                                        </a>
+                                    </section>
+                                    <section class="education-title">
+                                        <a href="#">
+                                            ساخت کاور برای کانال یوتیوب
+                                        </a>
+                                    </section>
+                                    <section class="clear-fix"></section>
+                                </section>
+                                <section class="education-parts">
+                                    <section class="education-img">
+                                        <a href="#">
+                                            <img src="Images/edu2.jpg" alt="آموزش قدم به قدم چسباندن زیرنویس به فیلم">
+                                        </a>
+                                    </section>
+                                    <section class="education-title">
+                                        <a href="#">
+                                            آموزش قدم به قدم چسباندن زیرنویس به فیلم
+                                        </a>
+                                    </section>
+                                    <section class="clear-fix"></section>
+                                </section>
+                                <section class="education-parts">
+                                    <section class="education-img">
+                                        <a href="#">
+                                            <img src="Images/edu3.jpg" alt="راهکارهای ساده برای کاهش پینگ در بازی‌ها">
+                                        </a>
+                                    </section>
+                                    <section class="education-title">
+                                        <a href="#">
+                                            راهکارهای ساده برای کاهش پینگ در بازی‌ها
+                                        </a>
+                                    </section>
+                                    <section class="clear-fix"></section>
+                                </section>
+                                <section class="education-parts">
+                                    <section class="education-img">
+                                        <a href="#">
+                                            <img src="Images/edu4.jpg" alt="دراپ باکس چیست و چه کاربردی دارد؟">
+                                        </a>
+                                    </section>
+                                    <section class="education-title">
+                                        <a href="#">
+                                            دراپ باکس چیست و چه کاربردی دارد؟
+                                        </a>
+                                    </section>
+                                    <section class="clear-fix"></section>
+                                </section>
+                                <section class="education-parts">
+                                    <section class="education-img">
+                                        <a href="#">
+                                            <img src="Images/edu5.jpg" alt="روش‌های استخراج عکس از PDF">
+                                        </a>
+                                    </section>
+                                    <section class="education-title">
+                                        <a href="#">
+                                            روش‌های استخراج عکس از PDF
+                                        </a>
+                                    </section>
+                                    <section class="clear-fix"></section>
+                                </section>
+                                <section class="education-parts">
+                                    <section class="education-img">
+                                        <a href="#">
+                                            <img src="Images/edu6.jpg" alt="برنامه نویسی بلاک چین">
+                                        </a>
+                                    </section>
+                                    <section class="education-title">
+                                        <a href="#">
+                                            برنامه نویسی بلاک چین
+                                        </a>
+                                    </section>
+                                    <section class="clear-fix"></section>
+                                </section>
+                                <section class="education-parts">
+                                    <section class="education-img">
+                                        <a href="#">
+                                            <img src="Images/edu7.jpg" alt="بهترین اپلیکیشن های آموزش برنامه نویسی">
+                                        </a>
+                                    </section>
+                                    <section class="education-title">
+                                        <a href="#">
+                                            بهترین اپلیکیشن های آموزش برنامه نویسی
+                                        </a>
+                                    </section>
+                                    <section class="clear-fix"></section>
+                                </section>
+                            </div>
+                        </section>
+                        <h3 class="discuss-t">وارد بحث شوید</h3>
+                        <section class="discussion">
+                            <section class="discussion-parts">
+                                <div>
+                                    <section class="dis-num">
+                                        <a href="#">314</a>
+                                    </section>
+                                    <section class="dis-detail">
+                                        <a href="#">بهترین گوشی های گیمینگ و مخصوص بازی [آذر ۱۴۰۱]</a>
+                                    </section>
+                                </div>
+                            </section>
+                            <section class="discussion-parts">
+                                <div>
+                                    <section class="dis-num">
+                                        <a href="#">78</a>
+                                    </section>
+                                    <section class="dis-detail">
+                                        <a href="#">
+                                            سفر در زمان؛ آیا می‌توان همین حالا در زمان سفر کرد؟
+                                        </a>
+                                    </section>
+                                </div>
+                            </section>
+                            <section class="discussion-parts">
+                                <div>
+                                    <section class="dis-num">
+                                        <a href="#">72</a>
+                                    </section>
+                                    <section class="dis-detail">
+                                        <a href="#">
+                                            شاید روشنایی نمایشگر گلکسی S23 اولترا به ۲۲۰۰ نیت برسد
+                                        </a>
+                                    </section>
+                                </div>
+                            </section>
+                            <section class="discussion-parts">
+                                <div>
+                                    <section class="dis-num">
+                                        <a href="#">68</a>
+                                    </section>
+                                    <section class="dis-detail">
+                                        <a href="#">
+                                            راهکارهای ساده برای کاهش پینگ در بازی‌ها
+                                        </a>
+                                    </section>
+                                </div>
+                            </section>
+                            <section class="discussion-parts">
+                                <div>
+                                    <section class="dis-num">
+                                        <a href="#">67</a>
+                                    </section>
+                                    <section class="dis-detail">
+                                        <a href="#">
+                                            شاید MIUI 14 شیائومی بهینه‌ترین رابط کاربری اندروید باشد
+                                        </a>
+                                    </section>
+                                </div>
+                            </section>
+                            <section class="discussion-parts">
+                                <div>
+                                    <section class="dis-num">
+                                        <a href="#">66</a>
+                                    </section>
+                                    <section class="dis-detail">
+                                        <a href="#">
+                                            افشاگر خوش‌سابقه می‌گوید رابط کاربری MIUI 14 شیائومی «بسیار روان» است
+                                        </a>
+                                    </section>
+                                </div>
+                            </section>
+                            <section class="discussion-parts">
+                                <div>
+                                    <section class="dis-num">
+                                        <a href="#">59</a>
+                                    </section>
+                                    <section class="dis-detail">
+                                        <a href="#">
+                                            گزارش مالی شیائومی؛ افت شدید سود خالص در پی افزایش سرمایه‌گذاری و کاهش فروش گوشی
+                                        </a>
+                                    </section>
+                                </div>
+                            </section>
+                        </section>
+                        <section class="sideBarLeft-adver2">
+                            <section>
+                                <a href="#">
+                                    <img src="https://cdn01.zoomit.ir/2022/11/banner-fly2dayy-300x250.gif" alt="">
+                                </a>
+                            </section>
+                        </section>
+                    </div>
+                </section>
+                <section class="clear-fix"></section>
+            </div>
+        </section>
+        <section class="shopping-guide">
+            <div class="shopping-guide-container">
+                <h3 class="guide-title">
+                    <a href="#">راهنمای خرید</a>
+                </h3>
+                <section class="shopping-guide-content">
+                    <section class="shop-col-1">
+                        <div>
+                            <a href="#" class="col-1-detail">
+                                <h3 class="col-1-title">
+                                    بهترین موس های بی سیم؛ از 100 هزار تا 4 میلیون تومان [آذر ماه ۱۴۰۱]
+                                </h3>
+                                <p>
+                                    بهترین موس بی سیم بازار مربوط به کدام برند است؟ ماوس بی سیم مناسب چه مشخصاتی باید داشته باشد؟ برای خرید ارزان‌ترین و گران‌ترین موس بی‌سیم بازار چقدر باید هزینه کرد؟ با راهنمای خرید بهترین موس بی‌سیم همراه زومیت باشید.
+                                </p>
+                            </a>
+                            <a href="#" class="show-all">
+                                <span>مشاهده همه</span>
+                                <i class="fa-solid fa-chevron-left"></i>
+                            </a>
+                        </div>
+                    </section>
+                    <section class="shop-col-2">
+                        <div class="shop-col-2-container">
+                            <section class="shop-items">
+                                <div>
+                                    <section class="shop-items-img">
+                                        <a href="#">
+                                            <img src="Images/shop1.jpg" alt="معرفی ۱۰ نمونه از بهترین آنتی ویروس های اندروید (گوشی سامسونگ، شیائومی و…)">
+                                        </a>
+                                    </section>
+                                    <section class="shop-items-txt">
+                                        <h6><a href="#">راهنمای خرید</a></h6>
+                                        <a href="#">
+                                            معرفی ۱۰ نمونه از بهترین آنتی ویروس های اندروید (گوشی سامسونگ، شیائومی و…)
+                                        </a>
+                                    </section>
+                                </div>
+                            </section>
+                            <section class="shop-items">
+                                <div>
+                                    <section class="shop-items-img">
+                                        <a href="#">
+                                            <img src="Images/shop2.jpg" alt="بهترین لپ تاپ های اقتصادی و دانشجویی [آذر ماه ۱۴۰۱]">
+                                        </a>
+                                    </section>
+                                    <section class="shop-items-txt">
+                                        <h6><a href="#">راهنمای خرید</a></h6>
+                                        <a href="#">
+                                            بهترین لپ تاپ های اقتصادی و دانشجویی [آذر ماه ۱۴۰۱]
+                                        </a>
+                                    </section>
+                                </div>
+                            </section>
+                            <section class="shop-items">
+                                <div>
+                                    <section class="shop-items-img">
+                                        <a href="#">
+                                            <img src="Images/shop3.jpg" alt="بهترین گوشی های گیمینگ و مخصوص بازی [آذر ۱۴۰۱]">
+                                        </a>
+                                    </section>
+                                    <section class="shop-items-txt">
+                                        <h6><a href="#">راهنمای خرید</a></h6>
+                                        <a href="#">
+                                            بهترین گوشی های گیمینگ و مخصوص بازی [آذر ۱۴۰۱]
+                                        </a>
+                                    </section>
+                                </div>
+                            </section>
+                            <section class="shop-items">
+                                <div>
+                                    <section class="shop-items-img">
+                                        <a href="#">
+                                            <img src="Images/shop4.jpg" alt="بهترین گوشی های موبایل بازار ایران [آبان ماه ۱۴۰۱]">
+                                        </a>
+                                    </section>
+                                    <section class="shop-items-txt">
+                                        <h6><a href="#">راهنمای خرید</a></h6>
+                                        <a href="#">
+                                            بهترین گوشی های موبایل بازار ایران [آبان ماه ۱۴۰۱]
+                                        </a>
+                                    </section>
+                                </div>
+                            </section>
+                            <section class="shop-items">
+                                <div>
+                                    <section class="shop-items-img">
+                                        <a href="#">
+                                            <img src="Images/shop5.png" alt="">
+                                        </a>
+                                    </section>
+                                    <section class="shop-items-txt">
+                                        <h6><a href="#">راهنمای خرید</a></h6>
+                                        <a href="#">
+                                            بهترین صندلی های گیمینگ ؛ از ۵ تا ۱۵ میلیون تومان
+                                        </a>
+                                    </section>
+                                </div>
+                            </section>
+                            <section class="shop-items">
+                                <div>
+                                    <section class="shop-items-img">
+                                        <a href="#">
+                                            <img src="Images/shop6.jpg" alt="بهترین آنتی ویروس های رایگان کامپیوتر 2022">
+                                        </a>
+                                    </section>
+                                    <section class="shop-items-txt">
+                                        <h6><a href="#">راهنمای خرید</a></h6>
+                                        <a href="#">
+                                            بهترین آنتی ویروس های رایگان کامپیوتر 2022
+                                        </a>
+                                    </section>
+                                </div>
+                            </section>
+                            <section class="clear-fix"></section>
+                        </div>
+                    </section>
+                    <section class="clear-fix"></section>
+                </section>
+            </div>
+        </section>
+        <section class="study">
+            <div class="study-container">
+                <div class="p-20x">
+                    <h3 class="study-title">
+                        <a href="#">بررسی</a>
+                    </h3>
+                <section class="study-content">
+                    <section class="study-col1">
+                        <div class="study-col1-img">
+                            <a href="#">
+                                <div class="study-col1-title">
+                                    <h3>بررسی آل این وان Modern AM242P 11M ام اس آی</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </section>
+                    <section class="study-col2">
+                        <section class="study-row mb-15x">
+                            <section class="study-col3 ml-10x">
+                                <div class="col3-img-1">
+                                    <a href="#">
+                                        <div class="col3-title-1">
+                                            <h4>بررسی ردمی ۱۰ ۲۰۲۲ شیائومی [با بررسی ویدیویی]</h4>
+                                        </div>
+                                    </a>
+                                </div>
+                            </section>
+                            <section class="study-col3">
+                                <div class="col3-img-2">
+                                    <a href="#">
+                                        <div class="col3-title-2">
+                                            <h4>بررسی اپل واچ اولترا؛ بزرگ‌ترین، گران‌ترین و حرفه‌ای‌ترین ساعت اپل [با بررسی ویدیویی]</h4>
+                                        </div>
+                                    </a>
+                                </div>
+                            </section>
+                            <section class="clear-fix"></section>
+                        </section>
+                        <section class="study-row">
+                            <section class="study-col4 pl-10x">
+                                <section class="col4-img-1">
+                                    <a href="#">
+                                        <img src="Images/study1.jpg" alt="بررسی آیفون ۱۴؛ تکرار مکررات [با بررسی ویدیویی]">
+                                    </a>
+                                </section>
+                                <section class="col4-title-1">
+                                    <h6>
+                                        <a href="#">بررسی آیفون ۱۴؛ تکرار مکررات [با بررسی ویدیویی]</a>
+                                    </h6>
+                                </section>
+                            </section>
+                            <section class="study-col4 pl-10x">
+                                <section class="col4-img-1">
+                                    <a href="#">
+                                        <img src="Images/study2.jpg" alt="بررسی گلکسی واچ ۵ پرو سامسونگ [با بررسی ویدیویی]">
+                                    </a>
+                                </section>
+                                <section class="col4-title-1">
+                                    <h6>
+                                        <a href="#">بررسی گلکسی واچ ۵ پرو سامسونگ [با بررسی ویدیویی]</a>
+                                    </h6>
+                                </section>
+                            </section>
+                            <section class="study-col4">
+                                <section class="col4-img-1">
+                                    <a href="#">
+                                        <img src="Images/study3.jpg" alt="بررسی گلکسی بادز ۲ پرو سامسونگ [با بررسی ویدیویی]">
+                                    </a>
+                                </section>
+                                <section class="col4-title-1">
+                                    <h6>
+                                        <a href="#">بررسی گلکسی بادز ۲ پرو سامسونگ [با بررسی ویدیویی]</a>
+                                    </h6>
+                                </section>
+                            </section>
+                            <section class="clear-fix"></section>
+                        </section>
+                    </section>
+                    <section class="clear-fix"></section>
+                </section>
+                </div>
+            </div>
+        </section>
+        <section class="ban-adver-767x">
+            <div>
+                <a href="#">
+                    <img src="https://cdn01.zoomit.ir/2022/11/corp-neo-qled-8k-gif-banner-july-global-content-468x60.gif" alt="">
+                </a>
+            </div>
+        </section>
+        <section class="show-off" id="btn-up">
+            <div>
+                <i class="fa-solid fa-angle-up"></i>
+            </div>
+        </section>
+    </main>
+ 
+
+    <footer class="footer">
+        <section class="part1">
+            <section class="f-row-1">
+                <section class="f-col1">
+                    <h3>آنچه دیگران بیشتر خواندند</h3>
+                    <section class="atractive">
+                        <section class="atractive-img">
+                            <a href="#">
+                                <img src="Images/atrac1.jpeg" alt="با تداوم محدودیت‌های اینترنت و عدم جبران هزینه‌ها رایتل ورشکسته می‌شود">
+                            </a>
+                        </section>
+                        <section class="atractive-title">
+                            <h4>
+                                <a href="#">
+                                    با تداوم محدودیت‌های اینترنت و عدم جبران هزینه‌ها رایتل ورشکسته می‌شود 
+                                </a>
+                            </h4>
+                            <time>1401/09/19</time>
+                        </section>
+                        <section class="clear-fix"></section>
+                    </section>
+                    <section class="atractive">
+                        <section class="atractive-img">
+                            <a href="#">
+                                <img src="Images/atrac2.jpg" alt="ایران به متا ۱۰ روز مهلت داد تا نمایندگی معرفی کند">
+                            </a>
+                        </section>
+                        <section class="atractive-title">
+                            <h4>
+                                <a href="#">
+                                    ایران به متا ۱۰ روز مهلت داد تا نمایندگی معرفی کند 
+                                </a>
+                            </h4>
+                            <time>1401/09/16</time>
+                        </section>
+                        <section class="clear-fix"></section>
+                    </section>
+                    <section class="atractive">
+                        <section class="atractive-img">
+                            <a href="#">
+                                <img src="Images/atrac3.jpg" alt="شیائومی قدرت گیمینگ گوشی Xiaomi 13 را به رخ کشید">
+                            </a>
+                        </section>
+                        <section class="atractive-title">
+                            <h4>
+                                <a href="#">
+                                    شیائومی قدرت گیمینگ گوشی Xiaomi 13 را به رخ کشید 
+                                </a>
+                            </h4>
+                            <time>1401/09/17</time>
+                        </section>
+                        <section class="clear-fix"></section>
+                    </section>
+                </section>
+                <section class="f-col2">
+                    <h3>کمی از تکنولوژی فاصله بگیرید</h3>
+                    <section class="tech">
+                        <section class="tech-img">
+                            <a href="#">
+                                <img src="Images/tech1.jpg" alt="تصویر تماشایی از شفق قطبی و صورت فلکی شکارچی در یک صحنه">
+                            </a>
+                        </section>
+                        <section class="tech-title">
+                            <h4>
+                                <a href="#">
+                                    تصویر تماشایی از شفق قطبی و صورت فلکی شکارچی در یک صحنه 
+                                </a>
+                            </h4>
+                            <time>1401/09/18</time>
+                        </section>
+                        <section class="clear-fix"></section>
+                    </section>
+                    <section class="tech">
+                        <section class="tech-img">
+                            <a href="#">
+                                <img src="Images/tech2.jpg" alt="برندگان مسابقه عکاسی Birdlife استرالیا سال ۲۰۲۲">
+                            </a>
+                        </section>
+                        <section class="tech-title">
+                            <h4>
+                                <a href="#">
+                                    برندگان مسابقه عکاسی Birdlife استرالیا سال ۲۰۲۲ 
+                                </a>
+                            </h4>
+                            <time>1401/09/16</time>
+                        </section>
+                        <section class="clear-fix"></section>
+                    </section>
+                    <section class="tech">
+                        <section class="tech-img">
+                            <a href="#">
+                                <img src="Images/tech3.jpg" alt="فینالیست‌های برگزیده مردمی رقابت عکاس حیات وحش ۲۰۲۲">
+                            </a>
+                        </section>
+                        <section class="tech-title">
+                            <h4>
+                                <a href="#">
+                                    فینالیست‌های برگزیده مردمی رقابت عکاس حیات وحش ۲۰۲۲ 
+                                </a>
+                            </h4>
+                            <time>1401/09/15</time>
+                        </section>
+                        <section class="clear-fix"></section>
+                    </section>
+                </section>
+                <section class="f-col3">
+                    <b>کاربران بیشتر به دنبال چه هستند؟</b>
+                    <ul class="search-more">
+                        <li>
+                            <a href="#"> قیمت گوشی سامسونگ </a>
+                        </li>
+                        <li>
+                            <a href="#">قیمت آیفون</a>
+                        </li>
+                        <li>
+                            <a href="#">قیمت گوشی هواوی</a>
+                        </li>
+                        <li>
+                            <a href="#">قیمت گوشی شیائومی</a>
+                        </li>
+                        <li>
+                            <a href="#">قیمت لپ تاپ ایسوس</a>
+                        </li>
+                        <li>
+                            <a href="#">قیمت لپ تاپ لنوو</a>
+                        </li>
+                        <li>
+                            <a href="#">قیمت تلویزیون ال جی</a>
+                        </li>
+                        <li>
+                            <a href="#">قیمت تلویزیون سامسونگ</a>
+                        </li>
+                        <li>
+                            <a href="#">قیمت هندزفری سامسونگ</a>
+                        </li>
+                        <li>
+                            <a href="#">قیمت هندزفری شیائومی</a>
+                        </li>
+                    </ul>
+                </section>
+                <section class="f-col4">
+                    <span>خانواده زومیت</span>
+                    <ul class="zommit-family">
+                        <li>
+                            <a href="#">زومیت</a>
+                        </li>
+                        <li>
+                            <a href="#">کجارو</a>
+                        </li>
+                        <li>
+                            <a href="#">زومجی</a>
+                        </li>
+                        <li>
+                            <a href="#">پدال</a>
+                        </li>
+                    </ul>
+                    <section class="joinning">
+                        <span>عضویت در خبرنامه</span>
+                        <form action="" class="joinning-f">
+                            <div>
+                                <i class="fa-regular fa-envelope"></i>
+                            </div>
+                            <input type="text" placeholder="ایمیل خود را وارد کنید">
+                            <a href="#">تایید</a>
+                        </form>
+                    </section>
+                </section>
+                <section class="clear-fix"></section>
+            </section>
+            <section class="line"></section>
+            <section class="f-row-2">
+                <section class="f-logo">
+                    <a href="#">
+                        <img src="https://cdn01.zoomit.ir/assets/logos/zoomit_logo_h.svg" alt="زومیت">
+                    </a>
+                </section>
+                <section class="f-text">
+                    <p>سرورهای زومیت توسط <a href="#">پارس پک</a> میزبانی می‌شود.</p>
+                </section>
+                <section class="clear-fix"></section>
+            </section>
+        </section>
+
+        <section class="f-row-3">
+            <div>
+                <section class="license">
+                    <p>
+                        <span>©</span>
+                        کپی بخش یا کل هر کدام از مطالب زومیت تنها با کسب مجوز مکتوب امکان پذیر است.
+                    </p>
+                </section>
+                <section class="footer-navbar">
+                    <ul class="footer-navbar-container">
+                        <li><a href="#">درباره ما</a></li>
+                        <li><a href="#">تبلیغات در زومیت</a></li>
+                        <li><a href="#">تماس با ما</a></li>
+                    </ul>
+                </section>
+                <section class="clear-fix"></section>
+            </div>
+        </section>
+    </footer>
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="JS/app.js"></script>
+</body>
+</html>
